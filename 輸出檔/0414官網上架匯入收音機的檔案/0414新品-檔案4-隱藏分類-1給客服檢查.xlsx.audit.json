@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:22:20",
+  "generated_at": "2026-05-11T15:20:19",
   "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_hidden_category_file4.py",
   "base": "/Users/openclaw/創旭/帕妃",
   "date_code": "0414",
@@ -72,5 +72,5 @@
   },
   "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案4-隱藏分類-1給客服檢查.xlsx",
   "dry_run": false,
-  "output_sha256": "72d03884a8e222915f8cb3b70ddd9aac5810383e49171f3192087225668d421d"
+  "output_sha256": "e0404028a162ea1ef33090cbde0f94209bbe4cbc24227fe3ddb9129f2c6c3f85"
 }

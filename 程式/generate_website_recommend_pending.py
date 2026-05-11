@@ -30,6 +30,8 @@ from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
 
+from excel_highlight_utils import highlight_blank_cells
+
 DEFAULT_BASE = Path('/Users/openclaw/創旭/帕妃')
 HEADERS = ['主物品編號', '推薦物品編號', '排序']
 
@@ -101,6 +103,7 @@ def generate(base: Path, date_code: str, dry_run: bool = False) -> Path:
         ws.append([row['code'], '', ''])
 
     ws.freeze_panes = 'A2'
+    highlight_count = highlight_blank_cells(ws, ['推薦物品編號', '排序'])
     autosize(ws)
 
     audit = {
@@ -116,6 +119,7 @@ def generate(base: Path, date_code: str, dry_run: bool = False) -> Path:
         'source_rows': rows,
         'inputs': {'商品資料大檔.xlsx': {'path': str(big_path), 'sha256': sha256(big_path)}},
         'output': str(output_path),
+        'highlighted_blank_cell_count': highlight_count,
         'dry_run': dry_run,
     }
 

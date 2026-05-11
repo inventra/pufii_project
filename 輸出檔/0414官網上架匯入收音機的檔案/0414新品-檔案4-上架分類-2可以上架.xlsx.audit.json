@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:22:21",
+  "generated_at": "2026-05-11T15:20:21",
   "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_category_file4.py",
   "base": "/Users/openclaw/創旭/帕妃",
   "date_code": "0414",
@@ -76,5 +76,5 @@
   },
   "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案4-上架分類-2可以上架.xlsx",
   "dry_run": false,
-  "output_sha256": "69e0b534faaabf998db3c64e0a3d217aa51ffa999ef951a3c6dc9455fd3e680f"
+  "output_sha256": "694e2c632c1f7b6bb511fd94cee4f96dbdcb5232ef778b2ee0e3dbf21e0e8766"
 }

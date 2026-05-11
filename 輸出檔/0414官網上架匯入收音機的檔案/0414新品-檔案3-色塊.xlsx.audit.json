@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:22:17",
+  "generated_at": "2026-05-11T15:20:16",
   "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_color_blocks_file3.py",
   "base": "/Users/openclaw/創旭/帕妃",
   "date_code": "0414",
@@ -48,5 +48,5 @@
   },
   "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案3-色塊.xlsx",
   "dry_run": false,
-  "output_sha256": "8fd696a571359bf0107525d7cc350b6a7608a9e242a46cd33a7d2ecd1a93020d"
+  "output_sha256": "169538cbb056ef8de11aa93d89745ee2f69e47edfa363c37669638379f3cada9"
 }

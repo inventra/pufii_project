@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:22:05",
+  "generated_at": "2026-05-11T15:20:05",
   "script": "/Users/openclaw/創旭/帕妃/程式/generate_live_table.py",
   "base": "/Users/openclaw/創旭/帕妃",
   "date_code": "0414",
@@ -75,8 +75,9 @@
       "source": "商品資料大檔.xlsx → 顏色尺寸請用這一個：A欄物品編號需有此流水號，J欄商店顏色需有值"
     }
   ],
+  "highlighted_blank_cell_count": 34,
   "dry_run": false,
-  "output_sha256": "62780e37c00a468fd9aa3d802452dfe005a2b649e851aebfeb4660fd51770596",
+  "output_sha256": "c1ce7b9a43637028231e3a19dae027c3a90980fb61d0d9edd3fc6df5a16cb6ae",
   "missing_report": "/Users/openclaw/創旭/帕妃/輸出檔/待補資料.txt",
   "missing_report_sha256": "9de4aea1766d62b4b02074a076ae2aa0f1d82438d266c14bfa517fd1361dbcf6"
 }

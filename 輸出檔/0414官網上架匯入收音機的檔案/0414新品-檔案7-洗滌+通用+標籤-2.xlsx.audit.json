@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:22:23",
+  "generated_at": "2026-05-11T15:20:22",
   "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_tags_file7.py",
   "base": "/Users/openclaw/創旭/帕妃",
   "date_code": "0414",
@@ -72,5 +72,5 @@
   },
   "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案7-洗滌+通用+標籤-2.xlsx",
   "dry_run": false,
-  "output_sha256": "66b8af84ee3f70b1bd0019d75a577131fb2d6bbd88bcb2a0e6c0e26f0ecdc5ff"
+  "output_sha256": "dfda95368d069a532ff5d007de9e46ddbf1c6f635322f7f88c99201b3ccd0061"
 }

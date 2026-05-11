@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:22:15",
+  "generated_at": "2026-05-11T15:20:15",
   "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_radio.py",
   "base": "/Users/openclaw/創旭/帕妃",
   "date_code": "0414",
@@ -19,5 +19,5 @@
   "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案2-名稱+大小.xlsx",
   "missing_or_pending": [],
   "dry_run": false,
-  "output_sha256": "acaa33212ee22503f04081c1a21766fda47806a5ea6a19654b948196c82e2f9c"
+  "output_sha256": "a56a84d352789015847344ec9292dbfeee897c97550e1c4df54e420d30b9fef6"
 }

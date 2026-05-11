@@ -30,6 +30,8 @@ from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
 
+from excel_highlight_utils import highlight_cell_if_blank, header_map
+
 
 DEFAULT_BASE = Path("/Users/openclaw/創旭/帕妃")
 
@@ -388,6 +390,53 @@ def autosize(ws) -> None:
         ws.column_dimensions[get_column_letter(c)].width = min(max_len + 2, 45)
 
 
+def highlight_missing_cells(wb: Workbook, audit_missing: list[dict[str, Any]]) -> int:
+    """把 audit 判定缺資料、且輸出仍為空白的欄位反黃。
+
+    只標需要人工檢查/補資料的欄位；像「備註」「標數」這類已確認固定空白不標。
+    """
+    if not audit_missing:
+        return 0
+
+    fields_by_code: dict[str, set[str]] = {}
+    for item in audit_missing:
+        code = norm(item.get("code"))
+        field = norm(item.get("field"))
+        if code and field:
+            fields_by_code.setdefault(code, set()).add(field)
+
+    highlight_count = 0
+    target_fields = {"推薦尺寸", "顏色", "尺寸表", "成本"}
+    sheets_with_code = [
+        wb.worksheets[0],  # 日期主表：B欄貨號為流水號
+        wb["對款"],
+        wb["RAY"],
+    ]
+    for ws in sheets_with_code:
+        headers = header_map(ws)
+        for row in range(2, ws.max_row + 1):
+            code = norm(ws.cell(row, 2).value)
+            missing_fields = fields_by_code.get(code, set())
+            for field in target_fields & missing_fields:
+                col = headers.get(field)
+                if col and highlight_cell_if_blank(ws, row, col):
+                    highlight_count += 1
+
+    # 「姐」分頁沒有流水號欄，依主表同列順序對應，只標推薦尺寸/顏色。
+    ws_sister = wb["姐"]
+    sister_headers = header_map(ws_sister)
+    ws_main = wb.worksheets[0]
+    for row in range(2, ws_sister.max_row + 1):
+        code = norm(ws_main.cell(row, 2).value)
+        missing_fields = fields_by_code.get(code, set())
+        for field in {"推薦尺寸", "顏色"} & missing_fields:
+            col = sister_headers.get(field)
+            if col and highlight_cell_if_blank(ws_sister, row, col):
+                highlight_count += 1
+
+    return highlight_count
+
+
 def write_missing_report(report_path: Path, date_code: str, missing_items: list[dict[str, Any]]) -> None:
     """輸出人工可讀 TXT：主軸按流水號列出需要補哪些欄位；不靠顏色辨識流水號。"""
     lines = [
@@ -545,6 +594,8 @@ def generate(base: Path, date_code: str, dry_run: bool = False) -> Path:
             origin_price, live_price, cost_candidate, new_price, vendor,
         ])
 
+    highlight_count = highlight_missing_cells(wb, audit_missing)
+
     for ws in wb.worksheets:
         autosize(ws)
 
@@ -561,6 +612,7 @@ def generate(base: Path, date_code: str, dry_run: bool = False) -> Path:
         "row_count": len(rows),
         "pending_rules": PENDING_RULES,
         "missing_or_pending": audit_missing,
+        "highlighted_blank_cell_count": highlight_count,
         "dry_run": dry_run,
     }
 

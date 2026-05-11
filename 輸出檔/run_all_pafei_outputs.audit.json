@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:21:49",
+  "generated_at": "2026-05-11T15:19:49",
   "base": "/Users/openclaw/創旭/帕妃",
   "flow_name": "帕妃自動產品產生檔",
   "workflow_code_bundle": "/Users/openclaw/創旭/帕妃/輸出檔/帕妃自動產品產生檔-流程與程式碼總檔.md",
@@ -65,5 +65,5 @@
   "missing_report": "/Users/openclaw/創旭/帕妃/輸出檔/待補資料.txt",
   "xlsx_count": 9,
   "audit_count": 9,
-  "missing_report_sha256": "ebfb89aa0c11cd14796c528b1aac2d665989b37737dfa664f526e2c1be66882d"
+  "missing_report_sha256": "8c130940b3b8ca8de15f44cc7e34009655b34bf5c56ecce4cf9987ab234b733d"
 }

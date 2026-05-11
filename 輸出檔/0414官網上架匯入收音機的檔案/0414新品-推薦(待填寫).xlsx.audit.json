@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T00:22:24",
+  "generated_at": "2026-05-11T15:20:23",
   "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_recommend_pending.py",
   "base": "/Users/openclaw/創旭/帕妃",
   "date_code": "0414",
@@ -61,6 +61,7 @@
     }
   },
   "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-推薦(待填寫).xlsx",
+  "highlighted_blank_cell_count": 20,
   "dry_run": false,
-  "output_sha256": "93b6bfb656fbeb014aab9b3a932db91e32918b24daba64f99d28a4501c9922a9"
+  "output_sha256": "2caa044b4a9f1a37d8b0d2c68a5576a75e0f07f95aedd3c53c02ddb989959f10"
 }
