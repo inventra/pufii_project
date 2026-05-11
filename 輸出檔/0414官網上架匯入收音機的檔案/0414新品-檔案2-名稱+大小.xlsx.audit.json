@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-11T00:22:15",
+  "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_radio.py",
+  "base": "/Users/openclaw/創旭/帕妃",
+  "date_code": "0414",
+  "folder": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案",
+  "sheet": "商品資料",
+  "filter": "商品資料(大檔)!A 記號 = date_code 且 B 用途 = 上架",
+  "column_count": 15,
+  "last_column": "O",
+  "last_header": "原價標",
+  "row_count": 10,
+  "inputs": {
+    "商品資料大檔.xlsx": {
+      "path": "/Users/openclaw/創旭/帕妃/輸入檔/商品資料大檔.xlsx",
+      "sha256": "df2d81e578459368847af49fea6d9bc49cb5285cd2396114e0d61a675e96f626"
+    }
+  },
+  "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案2-名稱+大小.xlsx",
+  "missing_or_pending": [],
+  "dry_run": false,
+  "output_sha256": "acaa33212ee22503f04081c1a21766fda47806a5ea6a19654b948196c82e2f9c"
+}

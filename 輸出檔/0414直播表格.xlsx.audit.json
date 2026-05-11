@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-05-11T00:22:05",
+  "script": "/Users/openclaw/創旭/帕妃/程式/generate_live_table.py",
+  "base": "/Users/openclaw/創旭/帕妃",
+  "date_code": "0414",
+  "inputs": {
+    "商品資料大檔.xlsx": {
+      "path": "/Users/openclaw/創旭/帕妃/輸入檔/商品資料大檔.xlsx",
+      "sha256": "df2d81e578459368847af49fea6d9bc49cb5285cd2396114e0d61a675e96f626"
+    },
+    "尺寸表&試穿報告.xlsx": {
+      "path": "/Users/openclaw/創旭/帕妃/輸入檔/尺寸表&試穿報告.xlsx",
+      "sha256": "de750290a6a2d4afcb3ad639b8d73062995bd15370d4d72c17e27c4f6b9e889b"
+    }
+  },
+  "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414直播表格.xlsx",
+  "row_count": 10,
+  "pending_rules": [
+    "推薦尺寸若尺寸表空白但正確檔有值，來源仍需確認。",
+    "P33315 品名差異需確認：主表/RAY 與對款名稱不同，且有『背心/肩帶背心』差異。"
+  ],
+  "missing_or_pending": [
+    {
+      "code": "P33061",
+      "field": "顏色",
+      "reason": "顏色尺寸請用這一個找不到商店顏色",
+      "source": "商品資料大檔.xlsx → 顏色尺寸請用這一個：A欄物品編號需有此流水號，J欄商店顏色需有值"
+    },
+    {
+      "code": "P33103",
+      "field": "顏色",
+      "reason": "顏色尺寸請用這一個找不到商店顏色",
+      "source": "商品資料大檔.xlsx → 顏色尺寸請用這一個：A欄物品編號需有此流水號，J欄商店顏色需有值"
+    },
+    {
+      "code": "P33104",
+      "field": "顏色",
+      "reason": "顏色尺寸請用這一個找不到商店顏色",
+      "source": "商品資料大檔.xlsx → 顏色尺寸請用這一個：A欄物品編號需有此流水號，J欄商店顏色需有值"
+    },
+    {
+      "code": "P33115",
+      "field": "顏色",
+      "reason": "顏色尺寸請用這一個找不到商店顏色",
+      "source": "商品資料大檔.xlsx → 顏色尺寸請用這一個：A欄物品編號需有此流水號，J欄商店顏色需有值"
+    },
+    {
+      "code": "P33232",
+      "field": "顏色",
+      "reason": "顏色尺寸請用這一個找不到商店顏色",
+      "source": "商品資料大檔.xlsx → 顏色尺寸請用這一個：A欄物品編號需有此流水號，J欄商店顏色需有值"
+    },
+    {
+      "code": "P33282",
+      "field": "顏色",
+      "reason": "顏色尺寸請用這一個找不到商店顏色",
+      "source": "商品資料大檔.xlsx → 顏色尺寸請用這一個：A欄物品編號需有此流水號，J欄商店顏色需有值"
+    },
+    {
+      "code": "P33296",
+      "field": "成本",
+      "reason": "商品資料(大檔) K欄 ray成本空白，導致直播表格成本空白",
+      "source": "商品資料大檔.xlsx → 商品資料(大檔)：對應流水號且 B欄用途=上架 的那一列，K欄 ray成本需有值"
+    },
+    {
+      "code": "P33296",
+      "field": "推薦尺寸",
+      "reason": "尺寸表適合尺寸空白或找不到",
+      "source": "尺寸表&試穿報告.xlsx：對應流水號所在列的『適合尺寸』欄需有值"
+    },
+    {
+      "code": "P33089",
+      "field": "顏色",
+      "reason": "顏色尺寸請用這一個找不到商店顏色",
+      "source": "商品資料大檔.xlsx → 顏色尺寸請用這一個：A欄物品編號需有此流水號，J欄商店顏色需有值"
+    }
+  ],
+  "dry_run": false,
+  "output_sha256": "62780e37c00a468fd9aa3d802452dfe005a2b649e851aebfeb4660fd51770596",
+  "missing_report": "/Users/openclaw/創旭/帕妃/輸出檔/待補資料.txt",
+  "missing_report_sha256": "9de4aea1766d62b4b02074a076ae2aa0f1d82438d266c14bfa517fd1361dbcf6"
+}

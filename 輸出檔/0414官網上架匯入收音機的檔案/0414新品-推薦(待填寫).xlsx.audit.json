@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-05-11T00:22:24",
+  "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_recommend_pending.py",
+  "base": "/Users/openclaw/創旭/帕妃",
+  "date_code": "0414",
+  "folder": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案",
+  "sheet": "商品資料",
+  "filter": "商品資料(大檔)!A 記號 = date_code 且 B 用途 = 上架",
+  "columns": [
+    "主物品編號",
+    "推薦物品編號",
+    "排序"
+  ],
+  "row_count": 10,
+  "source_rows": [
+    {
+      "source_row": 2336,
+      "code": "P33034"
+    },
+    {
+      "source_row": 2363,
+      "code": "P33061"
+    },
+    {
+      "source_row": 2405,
+      "code": "P33103"
+    },
+    {
+      "source_row": 2406,
+      "code": "P33104"
+    },
+    {
+      "source_row": 2417,
+      "code": "P33115"
+    },
+    {
+      "source_row": 2534,
+      "code": "P33232"
+    },
+    {
+      "source_row": 2584,
+      "code": "P33282"
+    },
+    {
+      "source_row": 7027,
+      "code": "P33296"
+    },
+    {
+      "source_row": 7028,
+      "code": "P33089"
+    },
+    {
+      "source_row": 7030,
+      "code": "P32990"
+    }
+  ],
+  "inputs": {
+    "商品資料大檔.xlsx": {
+      "path": "/Users/openclaw/創旭/帕妃/輸入檔/商品資料大檔.xlsx",
+      "sha256": "df2d81e578459368847af49fea6d9bc49cb5285cd2396114e0d61a675e96f626"
+    }
+  },
+  "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-推薦(待填寫).xlsx",
+  "dry_run": false,
+  "output_sha256": "93b6bfb656fbeb014aab9b3a932db91e32918b24daba64f99d28a4501c9922a9"
+}

@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+.env/
+.venv-gdown/
+
+# Temporary files
+*.tmp
+*.temp
+~$*.xlsx
+~$*.xls
+
+# Logs
+*.log
+
+# Local editor
+.vscode/
+.idea/

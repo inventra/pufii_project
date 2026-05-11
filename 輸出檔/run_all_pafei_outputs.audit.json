@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-05-11T00:21:49",
+  "base": "/Users/openclaw/創旭/帕妃",
+  "flow_name": "帕妃自動產品產生檔",
+  "workflow_code_bundle": "/Users/openclaw/創旭/帕妃/輸出檔/帕妃自動產品產生檔-流程與程式碼總檔.md",
+  "date_code": "0414",
+  "year": "2026",
+  "runs": [
+    {
+      "script": "generate_live_table.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/0414直播表格.xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/0414直播表格.xlsx.audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "generate_91_listing.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/91-0414新品上架的檔案.xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/91-0414新品上架的檔案.xlsx.audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "generate_website_radio.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案2-名稱+大小.xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案2-名稱+大小.xlsx.audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "generate_website_color_blocks_file3.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案3-色塊.xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案3-色塊.xlsx.audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "generate_website_middle_images_file5.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案5-中圖合圖.xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案5-中圖合圖.xlsx.audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "generate_website_hidden_category_file4.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案4-隱藏分類-1給客服檢查.xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案4-隱藏分類-1給客服檢查.xlsx.audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "generate_website_category_file4.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案4-上架分類-2可以上架.xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案4-上架分類-2可以上架.xlsx.audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "generate_website_tags_file7.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案7-洗滌+通用+標籤-2.xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案7-洗滌+通用+標籤-2.xlsx.audit.json\n",
+      "stderr": ""
+    },
+    {
+      "script": "generate_website_recommend_pending.py",
+      "returncode": 0,
+      "stdout": "已產出：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-推薦(待填寫).xlsx\n產出紀錄：/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-推薦(待填寫).xlsx.audit.json\n",
+      "stderr": ""
+    }
+  ],
+  "missing_count": 21,
+  "missing_report": "/Users/openclaw/創旭/帕妃/輸出檔/待補資料.txt",
+  "xlsx_count": 9,
+  "audit_count": 9,
+  "missing_report_sha256": "ebfb89aa0c11cd14796c528b1aac2d665989b37737dfa664f526e2c1be66882d"
+}

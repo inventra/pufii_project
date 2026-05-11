@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-05-11T00:22:18",
+  "script": "/Users/openclaw/創旭/帕妃/程式/generate_website_middle_images_file5.py",
+  "base": "/Users/openclaw/創旭/帕妃",
+  "date_code": "0414",
+  "year": "2026",
+  "sheet": "檔案5.購物網站顏色-多小圖匯入-匯入格式",
+  "columns": [
+    "物品編號",
+    "顏色",
+    "物品明細小圖路徑",
+    "物品明細中圖路徑",
+    "物品明細大圖路徑",
+    "購物上架",
+    "排序",
+    "款式顏色",
+    "中途路徑-前半"
+  ],
+  "filter": "商品資料(大檔)!A 記號 = date_code 且 B 用途 = 上架；取 E 流水號",
+  "source_sheet": "大師",
+  "source_mapping": {
+    "物品編號": "大師!A 物品編號",
+    "顏色": "大師!J 商店顏色（同流水號+商店顏色去重）",
+    "物品明細小圖路徑": "固定空白",
+    "物品明細中圖路徑": "https://photo.pufii.com.tw/{year}/{date}/{大師!AC 圖片路徑}-{大師!AD 色塊號碼}_{序號兩碼}.jpg",
+    "物品明細大圖路徑": "固定空白",
+    "購物上架": "固定 1",
+    "排序": "中圖序號 1..大師!AE 中圖張數",
+    "款式顏色": "物品編號-顏色",
+    "中途路徑-前半": "https://photo.pufii.com.tw/{year}/{date}/{大師!AC 圖片路徑}-{大師!AD 色塊號碼}"
+  },
+  "listing_code_count": 10,
+  "listing_codes": [
+    "P33034",
+    "P33061",
+    "P33103",
+    "P33104",
+    "P33115",
+    "P33232",
+    "P33282",
+    "P33296",
+    "P33089",
+    "P32990"
+  ],
+  "row_count": 82,
+  "missing_count": 0,
+  "missing": [],
+  "inputs": {
+    "商品資料大檔": {
+      "path": "/Users/openclaw/創旭/帕妃/輸入檔/商品資料(大檔).xlsx",
+      "sha256": "df2d81e578459368847af49fea6d9bc49cb5285cd2396114e0d61a675e96f626"
+    }
+  },
+  "output": "/Users/openclaw/創旭/帕妃/輸出檔/0414官網上架匯入收音機的檔案/0414新品-檔案5-中圖合圖.xlsx",
+  "dry_run": false,
+  "output_sha256": "b34c586b875232537ad0908ad57fbc88ec89200a014414a46e0cf5595756a857"
+}
